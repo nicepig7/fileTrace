@@ -1,0 +1,194 @@
+// -----------------------------------------
+// _ctxToken.scss
+// 의미적 값 (테마, 상황에 따라 변하는 값)을 정의합니다.
+// _baseToken.scss 의 변수들을 참조하여 CSS 변수로 노출시킵니다.
+// -----------------------------------------
+@use "sass:color";
+@use "baseToken" as *;
+
+// Base Token 색상에 투명도(alpha)를 적용하는 유틸리티 함수
+@function alpha($color, $opacity) {
+  @return color.change($color, $alpha: $opacity);
+}
+
+:root {
+  // --- Background Colors ---
+  --bg-base: #{$color-slate-900};
+  --bg-surface: #{$color-slate-950};
+  --bg-input: #{$color-slate-800};
+  --bg-panel: #{alpha($color-slate-900, 0.5)};
+  --bg-panel-light: #{alpha($color-slate-900, 0.3)};
+  --bg-card: #{alpha($color-slate-900, 0.8)};
+
+  // --- Text Colors ---
+  --text-base: #{$color-slate-50};
+  --text-primary: #{$color-white};
+  --text-secondary: #{$color-slate-200};
+  --text-tertiary: #{$color-slate-300};
+  --text-muted: #{$color-slate-400};
+  --text-disabled: #{$color-slate-500};
+  
+  // --- Border Colors ---
+  --border-base: #{$color-slate-800};
+  --border-light: #{alpha($color-slate-700, 0.5)};
+  --border-input: #{$color-slate-600};
+  --border-focus: #{$color-amber-500};
+  --border-focus-table: #{$color-emerald-500};
+
+  // --- Scrollbar ---
+  --scrollbar-track: #{$color-slate-900};
+  --scrollbar-thumb: #{$color-slate-700};
+  --scrollbar-thumb-hover: #{$color-slate-600};
+
+  // --- Accent/Brand Colors ---
+  --accent-primary: #{$color-amber-500};
+  --accent-primary-hover: #{$color-amber-400};
+  --accent-brand: #{$color-blue-500};
+  --accent-vue: #{$color-emerald-400};
+  --accent-api: #{$color-purple-400};
+  --accent-svc: #{$color-blue-400};
+
+  // --- Navigation / Active State Colors ---
+  --bg-active-api: #{alpha($color-blue-600, 0.2)};
+  --text-active-api: #{$color-blue-400};
+  --bg-active-db: #{alpha($color-emerald-600, 0.2)};
+  --text-active-db: #{$color-emerald-400};
+  --bg-active-mci: #{alpha($color-amber-600, 0.2)};
+  --text-active-mci: #{$color-amber-400};
+
+  // --- List Item Active State ---
+  --bg-mci-item-active: #{alpha($color-amber-500, 0.1)};
+  --border-mci-item-active: #{alpha($color-amber-500, 0.2)};
+  --text-mci-item-desc-active: #{alpha($color-amber-500, 0.6)};
+  --bg-table-item-active: #{alpha($color-emerald-500, 0.1)};
+  --border-table-item-active: #{alpha($color-emerald-500, 0.2)};
+  --text-table-item-desc-active: #{alpha($color-emerald-500, 0.6)};
+
+  // --- Interactive UI Elements ---
+  --bg-toggle: #{alpha($color-slate-800, 0.8)};
+  --bg-toggle-active: #{$color-indigo-600};
+  --bg-hover-muted: #{alpha($color-slate-700, 0.5)};
+  --border-hover: #{$color-slate-500};
+  --border-empty: #{alpha($color-slate-600, 0.5)};
+  --icon-empty: #{$color-slate-700};
+  --text-hover-purple: #{$color-purple-300};
+  --text-accent-emerald: #{$color-emerald-500};
+
+  // --- Primary Action Buttons ---
+  --btn-primary-bg: #{$color-blue-600};
+  --btn-primary-hover: #{$color-blue-700};
+  --btn-primary-active: #{$color-blue-800};
+
+  // --- Dropdown Menu ---
+  --bg-menu: #{alpha($color-slate-900, 0.95)};
+  --bg-menu-item-hover: #{alpha($color-slate-800, 0.9)};
+  --border-menu: #{$color-slate-700};
+  --border-menu-divider: #{alpha($color-slate-800, 0.8)};
+  --border-badge-ext: #{alpha($color-slate-700, 0.8)};
+
+  // --- Export Menu Items ---
+  --export-item-api-bg: #{alpha($color-emerald-950, 0.8)};
+  --export-item-api-border: #{alpha($color-emerald-600, 0.4)};
+  --export-item-api-hover-bg: #{alpha($color-emerald-900, 0.8)};
+  --export-item-api-hover-border: #{$color-emerald-500};
+  --export-item-mci-bg: #{alpha($color-rose-950, 0.8)};
+  --export-item-mci-border: #{alpha($color-rose-600, 0.4)};
+  --export-item-mci-text: #{$color-rose-400};
+  --export-item-mci-hover-bg: #{alpha($color-rose-900, 0.8)};
+  --export-item-mci-hover-border: #{$color-rose-500};
+  --export-item-mci-badge-bg: #{$color-rose-950};
+  --export-item-mci-badge-text: #{$color-rose-300};
+  --export-item-mci-badge-border: #{alpha($color-rose-700, 0.5)};
+
+  // --- Endpoint Card & Tree Nodes ---
+  --bg-card-header-hover: #{alpha($color-slate-800, 0.8)};
+  --bg-card-header-open: #{alpha($color-slate-800, 0.95)};
+  --text-class-name: #{$color-blue-300};
+  --text-method-name: #{$color-emerald-300};
+  --link-gitlab-hover: #{$color-orange-400};
+
+  // --- Method Badges ---
+  --badge-post-bg: #{$color-emerald-600};
+  --badge-get-bg: #{$color-blue-600};
+  --badge-other-bg: #{$color-slate-600};
+
+  // --- Project Badges ---
+  --badge-adm-bg: #{alpha($color-indigo-600, 0.2)};
+  --badge-adm-text: #{$color-indigo-300};
+  --badge-adm-border: #{alpha($color-indigo-500, 0.4)};
+  --badge-cor-bg: #{alpha($color-purple-500, 0.2)};
+  --badge-cor-text: #{$color-purple-300};
+  --badge-cor-border: #{alpha($color-purple-400, 0.4)};
+  --badge-default-bg: #{alpha($color-slate-700, 0.5)};
+  --badge-default-border: #{alpha($color-slate-500, 0.4)};
+
+  // --- Data & Client Badges ---
+  --badge-dbm-bg: #{alpha($color-orange-500, 0.2)};
+  --badge-dbm-text: #{$color-orange-300};
+  --badge-dbm-border: #{alpha($color-orange-500, 0.3)};
+  --badge-mci-bg: #{alpha($color-rose-500, 0.2)};
+  --badge-mci-text: #{$color-rose-300};
+  --badge-mci-border: #{alpha($color-rose-500, 0.3)};
+  --badge-web-bg: #{alpha($color-sky-500, 0.2)};
+  --badge-web-text: #{$color-sky-300};
+  --badge-web-border: #{alpha($color-sky-500, 0.3)};
+  --badge-web-border-screen: #{alpha($color-sky-500, 0.4)};
+  --badge-web-hover-bg: #{alpha($color-sky-500, 0.3)};
+  --badge-aos-bg: #{alpha($color-emerald-500, 0.2)};
+  --badge-aos-text: #{$color-emerald-300};
+  --badge-aos-border: #{alpha($color-emerald-500, 0.3)};
+  --badge-aos-border-screen: #{alpha($color-emerald-500, 0.4)};
+  --badge-aos-hover-bg: #{alpha($color-emerald-500, 0.3)};
+
+  // --- DBM Query Badges ---
+  --query-select-bg: #{alpha($color-blue-600, 0.8)};
+  --query-select-text: #{$color-blue-100};
+  --query-insert-bg: #{alpha($color-emerald-600, 0.8)};
+  --query-insert-text: #{$color-emerald-100};
+  --query-update-bg: #{alpha($color-amber-600, 0.8)};
+  --query-update-text: #{$color-amber-100};
+  --query-delete-bg: #{alpha($color-red-600, 0.8)};
+  --query-delete-text: #{$color-red-100};
+  --query-default-bg: #{alpha($color-slate-600, 0.8)};
+  --query-default-text: #{$color-slate-100};
+
+  // --- Soft Badges (MCI & Table) ---
+  --badge-vue-soft-bg: #{alpha($color-emerald-500, 0.2)};
+  --badge-vue-soft-text: #{$color-emerald-400};
+  --badge-svc-soft-bg: #{alpha($color-blue-500, 0.2)};
+  --badge-svc-soft-text: #{$color-blue-400};
+  --badge-sql-select-bg: #{alpha($color-blue-500, 0.2)};
+  --badge-sql-select-text: #{$color-blue-400};
+  --badge-sql-insert-bg: #{alpha($color-emerald-500, 0.2)};
+  --badge-sql-insert-text: #{$color-emerald-400};
+  --badge-sql-update-bg: #{alpha($color-amber-500, 0.2)};
+  --badge-sql-update-text: #{$color-amber-400};
+  --badge-sql-delete-bg: #{alpha($color-rose-500, 0.2)};
+  --badge-sql-delete-text: #{$color-rose-400};
+
+  // --- Tooltip Popover & Table Tooltip ---
+  --bg-tooltip: #{$color-slate-800};
+  --border-tooltip: #{$color-slate-600};
+  --table-badge-bg: #{alpha($color-orange-900, 0.4)};
+  --table-badge-text: #{$color-orange-200};
+  --table-badge-border: #{alpha($color-orange-700, 0.5)};
+  --table-badge-hover-bg: #{alpha($color-orange-800, 0.5)};
+  --table-badge-icon: #{$color-orange-400};
+
+  // --- MCI Node Badges ---
+  --mci-badge-bg: #{alpha($color-red-950, 0.4)};
+  --mci-badge-border: #{alpha($color-red-900, 0.5)};
+  --mci-badge-hover-bg: #{alpha($color-red-900, 0.4)};
+  --mci-badge-name: #{$color-red-200};
+  --mci-badge-line: #{alpha($color-red-400, 0.8)};
+  --mci-badge-icon: #{$color-red-400};
+
+  // --- Alerts & Errors ---
+  --bg-error: #{alpha($color-red-900, 0.3)};
+  --border-error: #{$color-red-500};
+  --text-danger: #{$color-red-500};
+  --text-error-msg: #{$color-red-200};
+  --text-warning: #{$color-rose-400};
+}
+
+

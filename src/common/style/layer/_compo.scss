@@ -1,0 +1,78 @@
+@layer compo {
+  .glass-panel {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .tree-line {
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    bottom: 0;
+    width: 1px;
+    background-color: #334155;
+    z-index: 0;
+  }
+
+  .tree-node-item {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Badges */
+  .badge-URL {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+
+  .badge-CTR {
+    background-color: #9333ea;
+    color: #ffffff;
+  }
+
+  .badge-SVC {
+    background-color: #059669;
+    color: #ffffff;
+  }
+
+  .badge-COM {
+    background-color: #d97706;
+    color: #ffffff;
+  }
+
+  .badge-DBM {
+    background-color: #ea580c;
+    color: #ffffff;
+  }
+
+  .badge-CLASS {
+    background-color: #475569;
+    color: #ffffff;
+  }
+
+  .badge-MCI {
+    background-color: #dc2626;
+    color: #ffffff;
+  }
+
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .slide-enter-from,
+  .slide-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+
+  .slide-enter-to,
+  .slide-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 2000px;
+  }
+}

@@ -1,0 +1,7 @@
+TOBE ID	Action Iteam No.	ASIS ID	I/F Name(KR)	I/F Name(EN)	IN/OUT
+IF_MCI_USER_001	ACT-001	LEGACY_USER_INQ	회원 기본정보 조회	Inquire User Profile	OUT
+IF_MCI_USER_002	ACT-002	LEGACY_USER_UPD	회원 상태 변경	Update User Status	OUT
+IF_MCI_ORD_001	ACT-003	LEGACY_ORD_REQ	주문 결제 승인 요청	Request Order Payment	OUT
+IF_MCI_ORD_002	ACT-004	LEGACY_ORD_CNCL	주문 결제 취소 요청	Cancel Order Payment	OUT
+IF_MCI_NOTI_001	ACT-005	LEGACY_PUSH_SEND	알림 푸시 발송 요청	Send Push Notification	OUT
+IF_MCI_NOTI_002	ACT-006	LEGACY_SMS_SEND	SMS 알림 메시지 발송	Send SMS Notification	OUT

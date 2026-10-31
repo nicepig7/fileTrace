@@ -1,0 +1,90 @@
+// -----------------------------------------
+// _baseToken.scss
+// 원시 값 (색상 팔레트, 크기, 여백 등)을 정의합니다.
+// 이 파일의 변수들은 빌드 타임에 해석되며 개발자 도구에 노출되지 않습니다.
+// -----------------------------------------
+
+// --- Colors (Tailwind Reference) ---
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Slate
+$color-slate-50:  #f8fafc;
+$color-slate-100: #f1f5f9;
+$color-slate-200: #e2e8f0;
+$color-slate-300: #cbd5e1;
+$color-slate-400: #94a3b8;
+$color-slate-500: #64748b;
+$color-slate-600: #475569;
+$color-slate-700: #334155;
+$color-slate-800: #1e293b;
+$color-slate-900: #0f172a;
+$color-slate-950: #020617;
+
+// Amber
+$color-amber-100: #fef3c7;
+$color-amber-400: #fbbf24;
+$color-amber-500: #f59e0b;
+$color-amber-600: #d97706;
+
+// Emerald
+$color-emerald-100: #d1fae5;
+$color-emerald-300: #6ee7b7;
+$color-emerald-400: #34d399;
+$color-emerald-500: #10b981;
+$color-emerald-600: #059669;
+$color-emerald-900: #064e3b;
+$color-emerald-950: #022c22;
+
+// Purple
+$color-purple-300: #d8b4fe;
+$color-purple-400: #c084fc;
+$color-purple-500: #a855f7;
+
+// Blue
+$color-blue-100:  #dbeafe;
+$color-blue-300:  #93c5fd;
+$color-blue-400:  #60a5fa;
+$color-blue-500:  #3b82f6;
+$color-blue-600:  #2563eb;
+$color-blue-700:  #1d4ed8;
+$color-blue-800:  #1e40af;
+
+// Red
+$color-red-100:   #fee2e2;
+$color-red-200:   #fecaca;
+$color-red-400:   #f87171;
+$color-red-500:   #ef4444;
+$color-red-600:   #dc2626;
+$color-red-900:   #7f1d1d;
+$color-red-950:   #450a0a;
+
+// Orange
+$color-orange-200: #fed7aa;
+$color-orange-300: #fdba74;
+$color-orange-400: #fb923c;
+$color-orange-500: #f97316;
+$color-orange-700: #c2410c;
+$color-orange-800: #9a3412;
+$color-orange-900: #7c2d12;
+
+// Rose
+$color-rose-300:  #fda4af;
+$color-rose-400:  #fb7185;
+$color-rose-500:  #f43f5e;
+$color-rose-600:  #e11d48;
+$color-rose-700:  #be123c;
+$color-rose-900:  #881337;
+$color-rose-950:  #4c0519;
+
+// Sky
+$color-sky-300:   #7dd3fc;
+$color-sky-400:   #38bdf8;
+$color-sky-500:   #0ea5e9;
+
+// Indigo
+$color-indigo-300: #a5b4fc;
+$color-indigo-400: #818cf8;
+$color-indigo-500: #6366f1;
+$color-indigo-600: #4f46e5;
+

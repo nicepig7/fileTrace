@@ -1,0 +1,13 @@
+/node_modules/
+/result/history/
+/report/
+/temp/
+/public/data.sqlite
+cst_output.json
+*.log
+
+# Generated JSON artifacts
+/src/extern/raw/mci/mciInfo.json
+/src/extern/raw/table/columnInfo.json
+/src/extern/raw/table/tableInfo.json
+

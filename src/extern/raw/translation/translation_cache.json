@@ -1,0 +1,74 @@
+[
+  {
+    "original": "회원 기본 마스터 테이블",
+    "ko": "회원 기본 마스터 테이블",
+    "en": "User Master Table",
+    "vi": "Bảng chính người dùng"
+  },
+  {
+    "original": "회원 활동 이력 테이블",
+    "ko": "회원 활동 이력 테이블",
+    "en": "User Activity History Table",
+    "vi": "Bảng lịch sử hoạt động người dùng"
+  },
+  {
+    "original": "주문 마스터 테이블",
+    "ko": "주문 마스터 테이블",
+    "en": "Order Master Table",
+    "vi": "Bảng chính đơn hàng"
+  },
+  {
+    "original": "주문 상세 상품 테이블",
+    "ko": "주문 상세 상품 테이블",
+    "en": "Order Item Details Table",
+    "vi": "Bảng chi tiết mặt hàng đơn hàng"
+  },
+  {
+    "original": "결제 정보 테이블",
+    "ko": "결제 정보 테이블",
+    "en": "Payment Information Table",
+    "vi": "Bảng thông tin thanh toán"
+  },
+  {
+    "original": "알림 발송 이력 테이블",
+    "ko": "알림 발송 이력 테이블",
+    "en": "Notification History Table",
+    "vi": "Bảng lịch sử gửi thông báo"
+  },
+  {
+    "original": "회원 기본정보 조회",
+    "ko": "회원 기본정보 조회",
+    "en": "Inquire User Profile",
+    "vi": "Tra cứu thông tin cơ bản người dùng"
+  },
+  {
+    "original": "회원 상태 변경",
+    "ko": "회원 상태 변경",
+    "en": "Update User Status",
+    "vi": "Thay đổi trạng thái người dùng"
+  },
+  {
+    "original": "주문 결제 승인 요청",
+    "ko": "주문 결제 승인 요청",
+    "en": "Request Order Payment",
+    "vi": "Yêu cầu thanh toán đơn hàng"
+  },
+  {
+    "original": "주문 결제 취소 요청",
+    "ko": "주문 결제 취소 요청",
+    "en": "Cancel Order Payment",
+    "vi": "Yêu cầu hủy thanh toán đơn hàng"
+  },
+  {
+    "original": "알림 푸시 발송 요청",
+    "ko": "알림 푸시 발송 요청",
+    "en": "Send Push Notification",
+    "vi": "Yêu cầu gửi thông báo đẩy"
+  },
+  {
+    "original": "SMS 알림 메시지 발송",
+    "ko": "SMS 알림 메시지 발송",
+    "en": "Send SMS Notification",
+    "vi": "Gửi tin nhắn SMS"
+  }
+]

@@ -1,0 +1,8 @@
+// 2. 각 서브 모듈 스타일시트 로드
+// 최신 Sass 모듈 스펙인 @use를 사용하여 가져옵니다.
+@use "./token/token";
+@use "./layer/reset";
+@use "./layer/base";
+@use "./layer/theme";
+@use "./layer/compo";
+@use "./layer/module";
